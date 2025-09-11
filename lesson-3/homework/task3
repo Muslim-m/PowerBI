@@ -1,0 +1,33 @@
+#1.What is the purpose of the "Applied Steps" pane in Power Query?
+#The “Applied Steps” pane in Power Query shows the sequence of transformations you’ve applied to your data,
+# such as filtering rows, changing data types, or merging queries. It keeps track of each modification
+# in the order they were made, so you can review, edit, or delete steps as needed.
+# This makes your data preparation process transparent, repeatable, and easy to adjust without starting over.
+
+
+#2.How do you remove duplicate rows in Power Query?
+#To remove duplicate rows in Power Query, you select the column or columns that should be checked for duplicates,
+# then go to the Home tab and choose the “Remove Duplicates” option.
+# Power Query will keep only the first occurrence of each unique value and remove the rest.
+
+
+#3.What does the "Filter" icon do in Power Query?
+#The “Filter” icon in Power Query allows you to limit the rows in your dataset based on specific criteria. When you apply a filter,
+# only the rows that meet the selected conditions remain, while the others are excluded from the query results.
+
+#4.How would you rename a column from "CustID" to "CustomerID"?
+#To rename a column from “CustID” to “CustomerID” in Power Query, you right-click the “CustID” column header,
+# choose the “Rename” option, and then type “CustomerID”.
+
+
+#5.What happens if you click "Close & Apply" in Power Query?
+#When you click “Close & Apply” in Power Query, it saves all the transformations you made in Power Query and loads the cleaned or modified data into Power BI.
+# This means the query results  become available in the data model for creating visuals, reports, and further analysis.
+
+
+#10 How would you handle null values in the Price column?
+#You can handle null values in the Price column in Power Query in different ways depending on your needs.
+# If you want to remove them, right-click the Price column, choose Remove Empty, and all rows with nulls will be deleted.
+# If you want to replace them, select the Price column, go to the Transform tab, click Replace Values, enter null as the value to find,
+# and type the replacement value you want (for example, 0 or the average price).
+# After that, click Close & Apply to save the changes.
