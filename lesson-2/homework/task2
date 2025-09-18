@@ -1,0 +1,31 @@
+#1.List three data sources Power BI can connect to.
+#.SQL Server 2.Excel files 3.Oracle Database
+#2.What is the first step to import data into Power BI Desktop?
+#The first step is to click on “Get Data” and select the data source you want to connect to.
+#3.How do you refresh imported data in Power BI?
+#You refresh imported data by clicking the “Refresh” button in Power BI Desktop, which reloads the data from the original source.
+#4.What file formats can Power BI import directly? (Name two.)
+#1)Excel(.xlsx,.xls)  2)  CSV(.csv)
+#5.What does the "Navigator" window show after selecting a data source?
+#The “Navigator” window shows a list of available tables, views, or objects
+# from the selected data source for you to preview and choose which ones to load.
+#6.How would you change OrderDate to a date format during import?
+#I would use the “Transform Data” option in Power Query and then change the data type to Date for that field.
+#8.What is the difference between "Load" and "Transform Data" in the import dialog?
+#Load: Imports the data directly into Power BI without changes.
+#Transform Data: Opens Power Query to clean, shape, or modify the data before loading.
+#9.Why might you see an error when connecting to a SQL database? (Name one reason.)
+#Because of invalid credentials or lack of permission to access the database.
+#10.How do you replace a data source after importing it?
+#By going to Home > Data source settings, selecting the source, and then choosing Change Source to update the connection.
+#11Write the M-code to import only rows where Quantity > 1.
+#= Table.SelectRows(Source, each [Quantity] > 1)
+#12 How would you change the data source if Sales_Data.csv changed?
+#I would go to Home > Data source settings, select the current file source,
+# click Change Source, and then browse to or enter the new file path for the updated Sales_Data.csv.
+#13.Troubleshoot: Your CSV import fails due to a "mixed data type" error—how do you fix it?
+#You fix it by adjusting the column data types in Power Query—either set a consistent type manually or use Detect Data Type after cleaning the inconsistent values.
+#14Connect to a live SQL database with parameters (e.g., filter by year).
+#I create a parameter in Power BI for the year, then connect to the SQL database through Power Query. In the query, reference the parameter inside the SQL statement so only the chosen year’s data loads. This makes the connection dynamic, and by changing the parameter value, Power BI requests a different slice of data from the live SQL database.
+#15How would you automate data imports using Power BI and Power Automate?
+#You automate data imports by publishing your dataset to the Power BI Service, then creating a flow in Power Automate. The flow uses a trigger, such as a new file added or a scheduled time, and an action to refresh the dataset in Power BI. Optionally, you can add notifications to confirm when the refresh is complete.
